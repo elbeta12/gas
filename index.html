@@ -15,9 +15,10 @@
     <script>
         async function cargarFichajes() {
             try {
-                const res = await fetch('/api/fichajes');
+                const res = await fetch('http://gas.railway.internal:3000/api/fichajes');
+
                 const fichajes = await res.json();
-                const container = document.getElementById('fichajes');
+                const container = document.getElementById('http://gas.railway.internal:3000/api/fichajes');
                 container.innerHTML = '';
 
                 fichajes.forEach(f => {
